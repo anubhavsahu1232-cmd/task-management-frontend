@@ -1,13 +1,12 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "http://localhost:8080/api",
+    baseURL: import.meta.env.VITE_API_BASE_URL,
     headers: {
         "Content-Type": "application/json"
     }
 });
 
-// Har request se pehle JWT automatically attach hoga
 api.interceptors.request.use(
     (config) => {
         const token = localStorage.getItem("token");
@@ -23,7 +22,6 @@ api.interceptors.request.use(
     }
 );
 
-// Unauthorized hone par login page par bhejo
 api.interceptors.response.use(
     (response) => response,
     (error) => {
