@@ -1,16 +1,60 @@
-# React + Vite
+# Task Management System - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern React-based frontend for managing personal tasks with secure authentication and a clean dashboard interface.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- User login and registration
+- JWT-based authentication
+- Protected routes
+- Task dashboard
+- Create new tasks
+- View task details
+- Edit existing tasks
+- Delete tasks
+- Task status management
+- Task priority management
+- Due date management
+- Search tasks
+- Filter by status
+- Filter by priority
+- Sort tasks
+- Task completion progress
+- Overdue task detection
+- User profile page
+- Toast notifications
+- Responsive user interface
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- Vite
+- Axios
+- React Router
+- CSS
 
-## Expanding the Oxlint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```text
+src/
+│
+├── api/
+│   └── axios.js
+│
+├── components/
+│   ├── ProtectedRoute.jsx
+│   └── Toast.jsx
+│
+├── pages/
+│   ├── AddTask.jsx
+│   ├── Dashboard.jsx
+│   ├── EditTask.jsx
+│   ├── Login.jsx
+│   ├── Profile.jsx
+│   ├── Register.jsx
+│   └── TaskDetails.jsx
+│
+├── App.jsx
+├── index.css
+└── main.jsx
